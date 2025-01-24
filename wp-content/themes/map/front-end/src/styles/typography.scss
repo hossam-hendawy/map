@@ -3,42 +3,35 @@
 // region fonts here
 @font-face {
   font-weight: 400;
-  font-family: 'Roboto';
-  src: url('fonts/Roboto/Roboto-Regular.woff2') format('woff2'),
-  url('fonts/Roboto/Roboto-Regular.woff') format('woff');
+  font-family: 'proxima-nova';
+  src: url('fonts/proximanova/proximanova_regular.woff2') format('woff2'),
+  url('fonts/proximanova/proximanova_regular.woff') format('woff');
+  font-style: normal;
+}
+@font-face {
+  font-weight: 600;
+  font-family: 'proxima-nova';
+  src: url('fonts/proximanova/Fontspring-DEMO-proximanovacond-medium.woff2') format('woff2'),
+  url('fonts/proximanova/proximanova_bold.woff') format('woff');
   font-style: normal;
 }
 
 @font-face {
-  font-weight: 500;
-  font-family: 'Roboto';
-  src: url('fonts/Roboto/Roboto-Medium.woff2') format('woff2'),
-  url('fonts/Roboto/Roboto-Medium.woff') format('woff');
+  font-weight: 600;
+  font-family: 'proxima-nova';
+  src: url('fonts/proximanova/proximanova_bold.woff2') format('woff2'),
+  url('fonts/proximanova/proximanova_bold.woff') format('woff');
   font-style: normal;
 }
-
-@font-face {
-  font-weight: 700;
-  font-family: 'Roboto';
-  src: url('fonts/Roboto/Roboto-Bold.woff2') format('woff2'),
-  url('fonts/Roboto/Roboto-Bold.woff') format('woff');
-  font-style: normal;
-}
-
-@font-face {
-  font-weight: 700;
-  font-family: "Helvetica Now Display";
-  src: url('fonts/helveticanowtext-bold-demo.woff2') format('woff2');
-  font-style: normal;
-}
-
 // endregion
 
+
 body {
-  font-family: $roboto !important;
+  font-family: $proxima_nova !important;
   color: $white-color;
   position: relative;
   overflow-x: hidden;
+  font-weight: 600;
 }
 
 h1, .en-h1, .en-h1 p {
@@ -108,7 +101,7 @@ h6, .en-h6, .en-h6 p {
     font-size: 20px;
   }
   
-  &.fz-20{
+  &.fz-20 {
     font-size: 20px;
   }
 }
@@ -129,7 +122,7 @@ p, .body, .body p {
   line-height: 140%;
 }
 
-.captions , .captions p {
+.captions, .captions p {
   color: $navy-tint;
   font-family: inherit;
   font-size: 13px;
@@ -138,7 +131,7 @@ p, .body, .body p {
   line-height: 140%;
 }
 
-.regular , .regular p {
+.regular, .regular p {
   font-weight: 400;
 }
 

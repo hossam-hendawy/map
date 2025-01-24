@@ -11,10 +11,8 @@ $navy-tint: #818093;
 $navy-light-tint: #E7E7F3;
 $green: #30D59E;
 
+$proxima_nova: 'proxima-nova';
 
-$Poppins: 'Poppins';
-$roboto: 'Roboto';
-$Helvetica: 'Helvetica Now Display';
 
 
 $container-padding-mobile: 20px;
@@ -130,7 +128,7 @@ $xx-large-screen-min-width: 1920px;
   border-radius: 10px;
   cursor: pointer;
   color: $white-color;
-  font-family: $roboto;
+  font-family: $proxima_nova;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -185,7 +183,7 @@ $xx-large-screen-min-width: 1920px;
 
 @mixin star-style {
   color: $navy;
-  font-family: $roboto;
+  font-family: $proxima_nova;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;

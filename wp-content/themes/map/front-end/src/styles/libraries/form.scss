@@ -7,7 +7,7 @@ body {
   .gform_wrapper.gravity-theme input:not([type="submit"]):not([type="number"]),
   select, textarea, .gform_wrapper.gravity-theme textarea, {
     color: $navy;
-    font-family: $roboto;
+    font-family: $proxima_nova;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -23,7 +23,7 @@ body {
     
     &::placeholder {
       color: $navy;
-      font-family: $roboto;
+      font-family: $proxima_nova;
       font-size: 16px;
       font-style: normal;
       font-weight: 400;
@@ -41,7 +41,7 @@ body {
       text-align: left;
       color: #c02b0a;
       text-transform: lowercase;
-      font-family: $roboto;
+      font-family: $proxima_nova;
       font-size: 12px;
       font-style: normal;
       font-weight: 400;
@@ -76,7 +76,7 @@ body {
     gap: 10px;
     background: #F3F3F9;
     color: $navy;
-    font-family: $roboto;
+    font-family: $proxima_nova;
     font-size: 13px;
     font-style: normal;
     font-weight: 400;
@@ -101,7 +101,7 @@ body {
   label, .gform_wrapper.gravity-theme .gfield_label {
     padding-top: 0;
     color: $navy;
-    font-family: $roboto;
+    font-family: $proxima_nova;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -179,7 +179,7 @@ body {
   .gform_wrapper.gravity-theme .instruction {
     text-align: left;
     color: #c02b0a;
-    font-family: $roboto;
+    font-family: $proxima_nova;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
@@ -209,7 +209,7 @@ body {
   // gform_confirmation_message
   .gform_confirmation_message {
     color: $navy;
-    font-family: $roboto;
+    font-family: $proxima_nova;
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
@@ -247,7 +247,7 @@ body {
   select:-webkit-autofill:hover,
   select:-webkit-autofill:focus {
     color: $navy;
-    font-family: $roboto;
+    font-family: $proxima_nova;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;

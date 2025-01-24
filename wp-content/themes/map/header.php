@@ -27,6 +27,16 @@
 <?php endif; ?>
 <header>
   <div class="header-wrapper">
-new header 
+    
+    <div class="sssss" style="color: black; text-align: center; "> Performance Food Group Cold Storage Distribution Center</div>
+    <br>
+  
+    <div style="color: black; text-align: center; ">94,000 SF</div>
+    <br>
+   
+    <div style="color: black; text-align: center; ">View Details</div>
+    
+    
+    new header
   </div>
 </header>
