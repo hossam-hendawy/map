@@ -1,0 +1,151 @@
+@import 'variables.scss';
+
+// region fonts here
+@font-face {
+  font-weight: 400;
+  font-family: 'Roboto';
+  src: url('fonts/Roboto/Roboto-Regular.woff2') format('woff2'),
+  url('fonts/Roboto/Roboto-Regular.woff') format('woff');
+  font-style: normal;
+}
+
+@font-face {
+  font-weight: 500;
+  font-family: 'Roboto';
+  src: url('fonts/Roboto/Roboto-Medium.woff2') format('woff2'),
+  url('fonts/Roboto/Roboto-Medium.woff') format('woff');
+  font-style: normal;
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: 'Roboto';
+  src: url('fonts/Roboto/Roboto-Bold.woff2') format('woff2'),
+  url('fonts/Roboto/Roboto-Bold.woff') format('woff');
+  font-style: normal;
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: "Helvetica Now Display";
+  src: url('fonts/helveticanowtext-bold-demo.woff2') format('woff2');
+  font-style: normal;
+}
+
+// endregion
+
+body {
+  font-family: $roboto !important;
+  color: $white-color;
+  position: relative;
+  overflow-x: hidden;
+}
+
+h1, .en-h1, .en-h1 p {
+  color: $navy;
+  font-family: inherit;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 100%;
+  @include min-medium-screen {
+    font-size: 50px;
+  }
+}
+
+h2, .en-h2, .en-h2 p {
+  color: $navy;
+  font-family: inherit;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 110%;
+  @include min-medium-screen {
+    font-size: 50px;
+  }
+}
+
+h3, .en-h3, .en-h3 p {
+  color: $navy;
+  font-family: inherit;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 110%;
+  @include min-medium-screen {
+    font-size: 35px;
+  }
+}
+
+h4, .en-h4, .en-h4 p {
+  color: $navy;
+  font-family: inherit;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  @include min-medium-screen {
+    font-size: 32px;
+  }
+}
+
+h5, .en-h5, .en-h5 p {
+  color: $navy;
+  font-family: inherit;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  @include min-medium-screen {
+    font-size: 22px;
+  }
+}
+
+h6, .en-h6, .en-h6 p {
+  color: $navy;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  @include min-medium-screen {
+    font-size: 20px;
+  }
+  
+  &.fz-20{
+    font-size: 20px;
+  }
+}
+
+p, .body, .body p {
+  font-family: inherit;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.body-2, .body-2 p {
+  font-family: inherit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.captions , .captions p {
+  color: $navy-tint;
+  font-family: inherit;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+.regular , .regular p {
+  font-weight: 400;
+}
+
+.medium, .medium p {
+  font-weight: 500;
+}
+
+.bold, .bold p {
+  font-weight: 700;
+}
