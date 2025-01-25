@@ -36,7 +36,7 @@ ol {
 
 svg {
   circle, path {
-    transition: fill $duration;
+    transition: fill $duration , stroke $duration;
   }
 }
 

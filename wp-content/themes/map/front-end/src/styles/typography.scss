@@ -76,7 +76,7 @@ h3, .map-h3, .map-h3 p {
   }
 }
 
-h4, .map-h4, .map-h4 p  ,  p{
+h4, .map-h4, .map-h4 p, p {
   color: $white-color;
   font-family: inherit;
   font-size: 26px;
@@ -133,6 +133,9 @@ h6, .map-h6, .map-h6 p {
   }
 }
 
+.capitalize-text {
+  text-transform: capitalize;
+}
 
 .regular, .regular p {
   font-weight: 400;
@@ -149,6 +152,7 @@ h6, .map-h6, .map-h6 p {
 .gold {
   color: $gold;
 }
+
 //@media screen and (max-width: 600px) {
 //
 //  .wp-block-themepunch-revslider {
@@ -168,3 +172,74 @@ h6, .map-h6, .map-h6 p {
 //    transform: translate(-60px, -30px);
 //  }
 //}
+
+.sub-menu {
+  border: 1px solid $medium-gray;
+  border-radius: 8px;
+  background-color: $dark-gray;
+  width: 375px;
+  margin: 0 auto;
+  
+  .item-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    min-height: 64px;
+    
+    &:not(:last-child) {
+      border-bottom: 1px solid $medium-gray;
+    }
+    
+    .checkbox {
+      background: transparent;
+      border: 1.5px solid $medium-gray;
+      border-radius: 3px;
+      flex-shrink: 0;
+      justify-content: center;
+      align-items: center;
+      width: 22px;
+      height: 22px;
+      transition: background $duration, border-color $duration;
+      display: flex;
+      
+      svg {
+        opacity: 0;
+        width: 10px;
+        height: 18px;
+        transition: opacity .6s;
+        
+        path {
+          stroke: $dark-gray;
+        }
+      }
+      
+    }
+    
+    .arrow {
+      width: 24px;
+      height: 24px;
+      path {
+        stroke: $medium-gray;
+      }
+    }
+    
+    &.active {
+      
+      .checkbox {
+        background-color: $gold;
+        border-color: $gold;
+      }
+      
+      .arrow {
+        path {
+          stroke: $gold;
+        }
+      }
+      
+      svg {
+        opacity: 1;
+      }
+    }
+  }
+}

@@ -25,6 +25,49 @@ if (isset($block)) {
 ?>
 <section id="<?= esc_attr($id) ?>" class="<?= esc_attr($className) ?>">
   
+  <ul class="sub-menu">
+    <li class="menu-item-in-sub-menu">
+      <div class="item-wrapper fz-24 capitalize-text ">
+        <div class="category-name body medium navy-color">All</div>
+        <div class="checkbox">
+          <svg width="10" height="8" viewBox="0 0 10 8" fill="none" aria-hidden="true">
+            <path d="M0.75 3.99992L3.58 6.82992L9.25 1.16992" stroke="#191919" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        
+        </div>
+      </div>
+      <div class="item-wrapper fz-24 capitalize-text has-arrow">
+        <div class="category-name body medium navy-color">Industries</div>
+        <svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M8.90991 19.9201L15.4299 13.4001C16.1999 12.6301 16.1999 11.3701 15.4299 10.6001L8.90991 4.08008" stroke="#4D4D4D" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div class="item-wrapper fz-24 capitalize-text has-arrow">
+        <div class="category-name body medium navy-color">Year Acruired</div>
+        <svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M8.90991 19.9201L15.4299 13.4001C16.1999 12.6301 16.1999 11.3701 15.4299 10.6001L8.90991 4.08008" stroke="#4D4D4D" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div class="item-wrapper fz-24 capitalize-text">
+        <div class="category-name body medium navy-color">Active</div>
+        <div class="checkbox">
+          <svg width="10" height="8" viewBox="0 0 10 8" fill="none" aria-hidden="true">
+            <path d="M0.75 3.99992L3.58 6.82992L9.25 1.16992" stroke="#191919" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        
+        </div>
+      </div>
+      <div class="item-wrapper fz-24 capitalize-text">
+        <div class="category-name body medium navy-color">Realized</div>
+        <div class="checkbox">
+          <svg width="10" height="8" viewBox="0 0 10 8" fill="none" aria-hidden="true">
+            <path d="M0.75 3.99992L3.58 6.82992L9.25 1.16992" stroke="#191919" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        
+        </div>
+      </div>
+    </li>
+  </ul>
   
   <a href="#" class="cta-button">Map View</a>
   <br>
