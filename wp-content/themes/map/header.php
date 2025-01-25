@@ -28,12 +28,22 @@
 <header>
   <div class="header-wrapper">
     
-    <div class="sssss" style="color: black; text-align: center; "> Performance Food Group Cold Storage Distribution Center</div>
+    <a href="#" class="cta-link map-h1">
+      View Details
+      <svg  viewBox="0 0 41 40" fill="none" aria-hidden="true">
+        <path d="M24.7168 9.8833L34.8335 20L24.7168 30.1166" stroke="white" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M6.50049 20H34.5505" stroke="white" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    
+    </a>
+    <div class="sssss" style="color: black; text-align: center; "> Performance Food Group Cold Storage Distribution
+      Center
+    </div>
     <br>
-  
+    
     <div style="color: black; text-align: center; ">94,000 SF</div>
     <br>
-   
+    
     <div style="color: black; text-align: center; ">View Details</div>
     
     

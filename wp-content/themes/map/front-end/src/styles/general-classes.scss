@@ -33,11 +33,11 @@
   width: fit-content;
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 14px;
   
   svg {
-    width: 15px;
-    height: 15px;
+    width: 40px;
+    height: 40px;
     transition: transform $duration;
   }
   
@@ -141,7 +141,7 @@
     }
     
     &:hover {
-      border-color: $navy;
+      border-color: $white-color;
     }
     
   }
@@ -183,15 +183,15 @@
 }
 
 .navy-color, .navy-color p {
-  color: $navy;
+  color: $white-color;
 }
 
 .green-color, .green-color p {
-  color: $green;
+  color: $gold;
 }
 
 .navy-tint-color, .navy-tint-color p {
-  color: $navy-tint;
+  color: $white-color
 }
 
 .white-color, .white-color p {
@@ -224,7 +224,7 @@
 // start product card
 .product-card {
   border-radius: 10px;
-  border: 1px solid $navy-light-tint;
+  border: 1px solid $gold;
   background: $white-color;
   padding: 32px 25px 40px;
   display: flex !important;
@@ -265,9 +265,9 @@
     font-size: 12px;
     
     &:hover {
-      color: $navy;
+      color: $white-color;
       background-color: transparent;
-      border-color: $navy;
+      border-color: $white-color;
     }
   }
   
@@ -331,13 +331,13 @@
     display: flex;
     
     &:hover {
-      color: $cyan;
+      color: $gold;
     }
   }
   
   &.solution-card {
     border-radius: 10px;
-    border: 1px solid $navy-light-tint;
+    border: 1px solid $gold;
     background: $white-color;
     height: auto !important;
     
@@ -371,7 +371,7 @@
       gap: 20px;
       padding: 19px 20px 40px;
       height: 100%;
-      border: 1px solid $navy-light-tint;
+      border: 1px solid $gold;
       border-top: none;
       border-radius: 0 0 10px 10px;
       
@@ -517,13 +517,13 @@ section {
   @include min-medium-screen {
     &:hover {
       color: $white-color;
-      background: $green;
+      background: $gold;
     }
   }
   
   &.active {
     color: $white-color;
-    background: $green;
+    background: $gold;
   }
   
 }
@@ -537,7 +537,7 @@ section {
   height: auto;
   padding: 30px 29px;
   border-radius: 10px;
-  border: 1px solid $navy-light-tint;
+  border: 1px solid $gold;
   display: flex !important;
   flex-direction: column;
   justify-content: space-between;
@@ -603,7 +603,7 @@ section {
     }
     
     .jop-title {
-      color: $navy-light-tint;
+      color: $gold;
     }
     
     .play-button {
@@ -631,7 +631,7 @@ section {
     &:hover {
       .play-video {
         path.circle {
-          fill: $navy;
+          fill: $white-color;
         }
       }
     }
@@ -640,7 +640,7 @@ section {
   
   &.has-image {
     border-radius: 5px;
-    border-color: $navy;
+    border-color: $white-color;
     padding: 16px 20px;
     
     .image-wrapper {

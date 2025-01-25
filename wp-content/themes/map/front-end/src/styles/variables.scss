@@ -5,11 +5,8 @@ $ease: ease-out;
 $white-color: #FFFFFF;
 $off-white-color: #F6F6FB;
 $black-color: #000000;
-$cyan: #2CBEFF;
-$navy: #0B0A40;
-$navy-tint: #818093;
-$navy-light-tint: #E7E7F3;
-$green: #30D59E;
+$gold: #F8C51E;
+
 
 $proxima_nova: 'proxima-nova';
 
@@ -133,8 +130,6 @@ $xx-large-screen-min-width: 1920px;
   font-style: normal;
   font-weight: 700;
   line-height: 140%;
-  background-color: $cyan;
-  border: 1px solid $cyan;
   transition: background-color $duration , color $duration , border-color $duration;
   
   
@@ -150,19 +145,17 @@ $xx-large-screen-min-width: 1920px;
     background-color: transparent;
     
     &:hover {
-      background-color: $cyan;
-      border-color:  $cyan;
+
     }
   }
   
   &.blue-cta{
-    border: 1px solid $navy;
-    color: $navy;
+    border: 1px solid$white-color;
+    color:$white-color;
     background-color: transparent;
     &:hover {
       color: $white-color;
-      background-color: $cyan;
-      border-color:  $cyan;
+
     }
   }
   
@@ -182,7 +175,7 @@ $xx-large-screen-min-width: 1920px;
 }
 
 @mixin star-style {
-  color: $navy;
+  color:$white-color;
   font-family: $proxima_nova;
   font-size: 16px;
   font-style: normal;

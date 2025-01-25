@@ -8,6 +8,7 @@
   url('fonts/proximanova/proximanova_regular.woff') format('woff');
   font-style: normal;
 }
+
 @font-face {
   font-weight: 600;
   font-family: 'proxima-nova';
@@ -23,122 +24,144 @@
   url('fonts/proximanova/proximanova_bold.woff') format('woff');
   font-style: normal;
 }
+
 // endregion
 
+html {
+  margin-top: 0;
+}
+
+#wpadminbar {
+  display: none;
+}
 
 body {
   font-family: $proxima_nova !important;
   color: $white-color;
+  background-color: $black-color;
   position: relative;
   overflow-x: hidden;
-  font-weight: 600;
 }
 
-h1, .en-h1, .en-h1 p {
-  color: $navy;
+h1, .map-h1, .map-h1 p {
+  color: $white-color;
   font-family: inherit;
-  font-size: 32px;
-  font-weight: 500;
+  font-size: 60px;
+  font-weight: 600;
   line-height: 100%;
   @include min-medium-screen {
-    font-size: 50px;
+    font-size: 120px;
   }
 }
 
-h2, .en-h2, .en-h2 p {
-  color: $navy;
+h2, .map-h2, .map-h2 p {
+  color: $white-color;
   font-family: inherit;
-  font-size: 36px;
-  font-weight: 500;
+  font-size: 40px;
+  font-weight: 400;
   line-height: 110%;
   @include min-medium-screen {
-    font-size: 50px;
+    font-size: 80px;
   }
 }
 
-h3, .en-h3, .en-h3 p {
-  color: $navy;
+h3, .map-h3, .map-h3 p {
+  color: $white-color;
   font-family: inherit;
-  font-size: 28px;
-  font-weight: 500;
-  line-height: 110%;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 121.8%;
   @include min-medium-screen {
-    font-size: 35px;
+    font-size: 56px;
   }
 }
 
-h4, .en-h4, .en-h4 p {
-  color: $navy;
+h4, .map-h4, .map-h4 p  ,  p{
+  color: $white-color;
   font-family: inherit;
   font-size: 26px;
   font-style: normal;
-  font-weight: 700;
-  line-height: 130%;
+  font-weight: 600;
+  line-height: 100%;
+  @include min-medium-screen {
+    font-size: 48px;
+  }
+}
+
+h5, .map-h5, .map-h5 p {
+  color: $white-color;
+  font-family: inherit;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+  @include min-medium-screen {
+    font-size: 40px;
+  }
+}
+
+h6, .map-h6, .map-h6 p {
+  color: $white-color;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%;
   @include min-medium-screen {
     font-size: 32px;
   }
 }
 
-h5, .en-h5, .en-h5 p {
-  color: $navy;
-  font-family: inherit;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 140%;
-  @include min-medium-screen {
-    font-size: 22px;
-  }
-}
-
-h6, .en-h6, .en-h6 p {
-  color: $navy;
+.fz-24, .fz-24 p {
+  color: $white-color;
   font-size: 16px;
   font-style: normal;
-  font-weight: 700;
-  line-height: 140%;
+  font-weight: 600;
+  line-height: 100%;
   @include min-medium-screen {
-    font-size: 20px;
-  }
-  
-  &.fz-20 {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 
-p, .body, .body p {
-  font-family: inherit;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 140%;
-}
-
-.body-2, .body-2 p {
-  font-family: inherit;
+.fz-28, .fz-28 p {
+  color: $white-color;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
-  line-height: 140%;
+  font-weight: 600;
+  line-height: 128.57%;
+  @include min-medium-screen {
+    font-size: 28px;
+  }
 }
 
-.captions, .captions p {
-  color: $navy-tint;
-  font-family: inherit;
-  font-size: 13px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 140%;
-}
 
 .regular, .regular p {
   font-weight: 400;
 }
 
 .medium, .medium p {
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .bold, .bold p {
   font-weight: 700;
 }
+
+//@media screen and (max-width: 600px) {
+//
+//  .wp-block-themepunch-revslider {
+//    position: relative;
+//    height: 295px !important;
+//  }
+//
+//  .elementor-column-gap-extended > .elementor-column > .elementor-element-populated {
+//    padding: 0 15px;
+//  }
+//
+//  rs-fullwidth-wrap, rs-module-wrap, rs-module {
+//    height: 100% !important;
+//  }
+//
+//  rs-bullets {
+//    transform: translate(-60px, -30px);
+//  }
+//}
