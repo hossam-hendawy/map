@@ -5,11 +5,12 @@ $ease: ease-out;
 $white-color: #FFFFFF;
 $off-white-color: #F6F6FB;
 $black-color: #000000;
+$dark-gray: #191919;
+$medium-gray: #4D4D4D;
 $gold: #F8C51E;
 
 
 $proxima_nova: 'proxima-nova';
-
 
 
 $container-padding-mobile: 20px;
@@ -121,47 +122,38 @@ $xx-large-screen-min-width: 1920px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 11px 20px;
-  border-radius: 10px;
+  padding: 19px 38.9px;
+  border-radius: 8px;
   cursor: pointer;
-  color: $white-color;
   font-family: $proxima_nova;
-  font-size: 16px;
+  color: $black-color;
+  font-size: 24px;
   font-style: normal;
-  font-weight: 700;
-  line-height: 140%;
-  transition: background-color $duration , color $duration , border-color $duration;
-  
+  font-weight: 600;
+  line-height: 100%;
+  text-transform: capitalize;
+  background-color: $gold;
+  border: 1px solid $gold;
+  transition: background-color $duration, color $duration, border-color $duration;
   
   &:hover {
     color: $white-color;
-    border-color:  $white-color;
-    background-color: transparent;
+    background-color: $dark-gray;
+    border-color: $medium-gray;
   }
   
-  &.light-cta {
-    color: $white-color;
-    border: 1px solid $white-color;
-    background-color: transparent;
+  &.has-icon {
+    padding: 19px 31px;
+    gap: 8px;
     
-    &:hover {
-
+    svg {
+      width: 24px;
+      height: 24px;
+      
+      path {
+        stroke: currentColor;
+      }
     }
-  }
-  
-  &.blue-cta{
-    border: 1px solid$white-color;
-    color:$white-color;
-    background-color: transparent;
-    &:hover {
-      color: $white-color;
-
-    }
-  }
-  
-  &.small-cta {
-    padding: 5.3px 20px;
-    font-size: 12px;
   }
 }
 
@@ -175,7 +167,7 @@ $xx-large-screen-min-width: 1920px;
 }
 
 @mixin star-style {
-  color:$white-color;
+  color: $white-color;
   font-family: $proxima_nova;
   font-size: 16px;
   font-style: normal;

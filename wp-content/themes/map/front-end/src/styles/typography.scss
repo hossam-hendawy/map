@@ -102,7 +102,7 @@ h5, .map-h5, .map-h5 p {
 
 h6, .map-h6, .map-h6 p {
   color: $white-color;
-  font-size: 16px;
+  font-size: 24px;
   font-style: normal;
   font-weight: 600;
   line-height: 125%;
@@ -146,6 +146,9 @@ h6, .map-h6, .map-h6 p {
   font-weight: 700;
 }
 
+.gold {
+  color: $gold;
+}
 //@media screen and (max-width: 600px) {
 //
 //  .wp-block-themepunch-revslider {
