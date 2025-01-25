@@ -28,6 +28,7 @@ $medium-screen-min-992: 992px;
 $large-screen-min-width: 1280px;
 $x-large-screen-min-width: 1440px;
 $xx-large-screen-min-width: 1920px;
+$xxx-large-screen-min-width: 2500px;
 
 //region media query
 
@@ -93,6 +94,11 @@ $xx-large-screen-min-width: 1920px;
     @content;
   }
 }
+@mixin  media-screen-from-2500() {
+  @media screen and (min-width: $xxx-large-screen-min-width) {
+    @content;
+  }
+}
 
 //endregion {only} media
 
@@ -122,7 +128,6 @@ $xx-large-screen-min-width: 1920px;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 180px;
   padding: 19px 34.9px;
   border-radius: 8px;
   cursor: pointer;

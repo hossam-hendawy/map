@@ -7,7 +7,7 @@
   <?php wp_head(); ?>
 <body <?php body_class(); ?>>
 
-<header class="virtual_world_header" style="transform: translate(0px, 0px);">
+<header class="map-header">
   <div class="header-wrapper">
     <!--     logo-->
     <a href="<?= site_url() ?>" class="main-logo">
