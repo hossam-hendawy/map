@@ -1,6 +1,322 @@
 @import '../../styles/variables.scss';
 
 header {
-  background-color: #00d084;
-  height: 50px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  transform: translateX(0);
+  transition: background-color $duration;
+  padding-block: 31px;
+  background-color: $black-color;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  // header
+  .header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 20px;
+    width: 100%;
+    position: relative;
+    @include min-medium-screen {
+      padding: 0 150px;
+    }
+  }
+  
+  // logo
+  .main-logo {
+    z-index: 90;
+    @include min-medium-screen {
+      height: 50px;
+    }
+    @include large-screen {
+      width: 453px;
+      height: 88px;
+    }
+    picture {
+      display: block;
+    }
+    img, svg {
+      object-fit: contain;
+    }
+  }
+  
+  // burger menu
+  .burger-menu {
+    width: 20px;
+    height: 14px;
+    z-index: 10;
+    cursor: pointer;
+    transform: translate3d(0, 0, 0);
+    flex-shrink: 0;
+    border: none;
+    background: transparent;
+    padding: 0;
+    
+    &:focus {
+      outline: none !important;
+    }
+    
+    span {
+      display: block;
+      width: 100%;
+      height: 3px;
+      margin-bottom: 3px;
+      position: relative;
+      z-index: 1;
+      transition: color $duration;
+      color: $white-color;
+      
+      &:after, &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: currentColor;
+        opacity: .99;
+        transition: background-color $duration;
+        display: table;
+        border-radius: 10px;
+      }
+      
+      &:nth-of-type(even) {
+        &:before {
+          transform-origin: right;
+          transform: scaleX(0) translateZ(0);
+          transition: transform .6s cubic-bezier(.165, .84, .44, 1);
+        }
+        
+        &:after {
+          transform-origin: left;
+          transform: scaleX(1) translateZ(0);
+          transition: transform .6s cubic-bezier(.165, .84, .44, 1) .2s;
+        }
+      }
+      
+      &:before {
+        transform-origin: right;
+        transform: scaleX(1) translateZ(0);
+        transition: transform .6s cubic-bezier(.165, .84, .44, 1) .2s;
+      }
+      
+      &:after {
+        transform-origin: left;
+        transform: scaleX(0) translateZ(0);
+        transition: transform .6s cubic-bezier(.165, .84, .44, 1);
+      }
+      
+      &:last-child {
+        margin: 0 auto;
+      }
+      
+      &:first-child {
+        margin: 0 auto 3px;
+      }
+    }
+    
+    &:hover {
+      span {
+        
+        &:nth-of-type(even) {
+          &:before {
+            transform: scaleX(1) translateZ(0);
+            transition: transform .6s cubic-bezier(.165, .84, .44, 1) .2s;
+          }
+          
+          &:after {
+            transform: scaleX(0) translateZ(0);
+            transition: transform .6s cubic-bezier(.165, .84, .44, 1);
+          }
+        }
+        
+        &:before {
+          transform: scaleX(0) translateZ(0);
+          transition: transform .6s cubic-bezier(.165, .84, .44, 1);
+        }
+        
+        &:after {
+          transform: scaleX(1) translateZ(0);
+          transition: transform .6s cubic-bezier(.165, .84, .44, 1) .2s;
+        }
+        
+      }
+    }
+    
+    @include min-medium-screen {
+      display: none;
+    }
+  }
+  
+  // links
+  .navbar {
+    position: relative;
+    align-items: center;
+    flex-direction: row;
+    margin-left: auto;
+    
+    @include max-medium-screen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      transform: translateX(-100%);
+      width: 100%;
+      
+      transition: transform 300ms ease-in;
+    }
+    
+    &.header-links-active {
+      transform: translateX(0);
+      
+      &:before {
+        opacity: 0.6;
+      }
+    }
+  }
+  
+  .navbar-wrapper {
+    background: #0c1318;
+    width: 100%;
+    height: 100vh;
+    transition: padding $duration;
+    overflow: scroll;
+    
+    @include large-screen {
+      background-color: transparent;
+      padding: 0;
+      width: auto;
+      height: auto;
+      overflow: visible;
+      
+    }
+  }
+  
+  .primary-menu {
+    gap: 40px;
+    @include large-screen {
+      display: flex;
+      align-items: center;
+    }
+  }
+  
+  .menu-item {
+    position: relative;
+    cursor: pointer;
+    
+    &:not(:last-child) {
+      margin-bottom: 35px;
+    }
+    
+    @include large-screen {
+      
+      &:not(:last-child) {
+        margin-bottom: 0;
+      }
+      
+    }
+    
+    
+    @include large-screen {
+      &:hover {
+        a {
+          &:after {
+            opacity: 1;
+          }
+        }
+      }
+    }
+    
+    &.active-page-link {
+      a {
+        &:after {
+          opacity: 1;
+        }
+      }
+    }
+    
+    &.menu-item-has-children {
+      .sub-menu {
+        height: 0;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        
+        &:before {
+          @include max-medium-screen {
+            content: "";
+            position: relative;
+            width: 100%;
+            margin-top: 30px;
+            pointer-events: none;
+            background: transparent;
+          }
+        }
+        
+        @include large-screen {
+          height: auto;
+          width: 200px;
+          background: rgba(245, 245, 245, 0.98);
+          position: absolute;
+          top: 100%;
+          left: 50%;
+          transform: translateX(-50%);
+          opacity: 0;
+          transition: opacity $duration;
+          pointer-events: none;
+        }
+      }
+      
+      .arrow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        transform-origin: 50% 50%;
+        width: 12px;
+        height: 28px;
+        right: 0;
+        transition: transform $duration;
+        
+        
+        @include large-screen {
+          display: none;
+        }
+      }
+      
+      .menu-item-in-sub-menu {
+        &:not(:last-child) {
+          margin-bottom: 22px;
+        }
+        
+        
+        &.active-page-sublink {
+        
+        }
+      }
+      
+      &.menu-item-active {
+        .arrow {
+          transform: scaleY(-1);
+        }
+      }
+      
+      @include large-screen {
+        &:hover {
+          .sub-menu {
+            opacity: 1;
+            pointer-events: auto;
+          }
+        }
+      }
+    }
+  }
+  
+  
 }

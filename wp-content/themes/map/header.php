@@ -6,12 +6,36 @@
   <meta content="ie=edge" http-equiv="X-UA-Compatible">
   <?php wp_head(); ?>
 <body <?php body_class(); ?>>
-<header>
+
+<header class="virtual_world_header" style="transform: translate(0px, 0px);">
   <div class="header-wrapper">
-    
-   
-    
-    
-    new header
+    <!--     logo-->
+    <a href="<?= site_url() ?>" class="main-logo">
+      <picture>
+        <img src="<?= get_template_directory_uri() . '/images/main-logo.png' ?>" alt="main logo">
+      </picture>
+    </a>
+    <!-- burger menu and cross-->
+    <button aria-label="Open Menu Links" class="burger-menu hide-only-lg">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <!--     links  -->
+    <nav class="navbar">
+      <div class="navbar-wrapper">
+        <ul class="primary-menu">
+          <li class="menu-item">
+            <a href="#" class="cta-button">Map View</a>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="cta-button">Grid View</a>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="cta-button">Sort</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   </div>
 </header>
