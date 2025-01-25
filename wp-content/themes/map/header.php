@@ -31,8 +31,15 @@
           <li class="menu-item">
             <a href="#" class="cta-button">Grid View</a>
           </li>
-          <li class="menu-item">
-            <a href="#" class="cta-button">Sort</a>
+          <li class="menu-item menu-item-has-children">
+            <div  class="cta-button">Sort</div>
+            <ul class="sub-menu">
+              <li class="menu-item-in-sub-menu">
+                <div class="header-sublink">
+                  dodo
+                </div>
+              </li>
+            </ul>
           </li>
         </ul>
       </div>

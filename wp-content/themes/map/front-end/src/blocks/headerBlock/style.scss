@@ -18,14 +18,17 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 12px 20px;
+    padding: 20px 20px;
     width: 100%;
     position: relative;
+    @include large-screen {
+      padding: 25px 30px;
+    }
     @include x-large-screen {
-      padding: 0 30px;
+      padding: 31px 30px;
     }
     @include media-screen-from-2500 {
-      padding: 0 150px;
+      padding-inline: 150px;
     }
   }
   
@@ -36,6 +39,9 @@ header {
     align-items: center;
     width: 170px;
     height: 40px;
+    @include large-screen {
+      width: 210px;
+    }
     @include x-large-screen {
       width: 230px;
       height: 58px;
@@ -136,6 +142,8 @@ header {
       }
     }
     
+    display: none;
+    
     &:hover {
       span {
         
@@ -164,9 +172,10 @@ header {
       }
     }
     
-    @include min-medium-screen {
-      display: none;
+    @media screen and (max-width: 767.8px) {
+      display: block;
     }
+    
   }
   
   // links
@@ -175,7 +184,8 @@ header {
     align-items: center;
     flex-direction: row;
     margin-left: auto;
-    @include max-medium-screen {
+    
+    @media screen and (max-width: 767.8px) {
       position: fixed;
       top: 0;
       left: 0;
@@ -206,14 +216,12 @@ header {
     @include min-medium-screen {
       padding: 0;
     }
-    
-    @include large-screen {
+    @media screen and (min-width: 768px) {
       background-color: transparent;
       padding: 0;
       width: auto;
       height: auto;
       overflow: visible;
-      
     }
   }
   
@@ -221,7 +229,7 @@ header {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    @include min-medium-screen {
+    @media screen and (min-width: 768px) {
       align-items: center;
       flex-direction: row;
     }
@@ -236,8 +244,14 @@ header {
     .cta-button {
       padding-inline: 20px;
       min-width: 190px;
+      font-size: 16px;
+      padding-block: 12px;
+      @media screen and (min-width: 768px) {
+        min-width: 140px;
+      }
       @include min-medium-screen {
         min-width: 150px;
+        font-size: 24px;
       }
       @include xx-large-screen {
         min-width: 180px;
